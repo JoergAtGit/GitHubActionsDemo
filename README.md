@@ -1,6 +1,8 @@
 # GitHubActionsDemo
 NewRepoToTestGitHubActions
 #
+#This repo is for testing and it refers to the tutorial: https://www.youtube.com/watch?v=ylEy4eLdhFs
+#
 #GitHub-Action is a feature in GitHub to create custom automated workflows
 - automate SDLC workflows
 - implement CICD-Pipelines
