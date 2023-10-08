@@ -18,8 +18,8 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - run: echo 'Werte der Variablen:'
-      - run: echo ${{ github.event.workflow_run.id}} 
-      - run: echo ${{ github.event.workflow_run.types}} 
+      - run: echo ${{ github.workflow.name}} 
+#      - run: echo ${{ github.event.workflow_run.types}} 
       - run: echo ${{ github.event.workflow_run.conclusion}}
       - run: echo 'The first workflow passed'
   on-failure:
@@ -27,8 +27,8 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
       - run: echo 'Werte der Variablen:'
-      - run: echo ${{ github.event.workflow_run.id}} 
-      - run: echo ${{ github.event.workflow_run.types}} 
+      - run: echo ${{ github.workflow.name}} 
+#      - run: echo ${{ github.event.workflow_run.types}} 
       - run: echo ${{ github.event.workflow_run.conclusion}}
       - run: echo 'The first workflow failed'
 # 
