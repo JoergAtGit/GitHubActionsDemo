@@ -16,3 +16,6 @@ NewRepoToTestGitHubActions
 - Steps
 #
 #More detailed information can be added here!
+#
+#Additional beginner-tutorial for Git and GitHub: https://www.youtube.com/watch?v=B8NurikxEo8
+#
