@@ -1,0 +1,40 @@
+# this is the name of the 'workflow'
+name: 'WorkflowWithDependencies'
+#
+# this is the 'event' for this workflow
+# means when will it be executed
+'on': 'push'
+# 
+# section, which contains the job-definitions
+# each job contains one step at least
+# but it can also contain more than one step
+jobs:
+#
+  first-job:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'first step'
+        run: 'echo "Hello World!"'
+      - name: 'second step'
+        run: 'echo "Hallo Welt!"'
+#      
+  second-job:
+    #dependency to the first-job
+    needs: first-job
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'first step'
+        run: 'echo "Hello Earth!"'
+      - name: 'second step'
+        run: 'echo "Hallo Erde!"'
+#
+  third-job:
+    #dependency to the second-job
+    needs: second-job
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'first step'
+        run: 'echo "Hello Joerg!"'
+      - name: 'second step'
+        run: 'echo "How are you doing today?"'
+#
