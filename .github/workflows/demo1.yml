@@ -26,3 +26,11 @@ jobs:
       - name: 'second step'
         run: 'echo "Hallo Erde!"'
 #
+  third-job:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'first step'
+        run: 'echo "Hello Joerg!"'
+      - name: 'second step'
+        run: 'echo "How are you doing today?"'
+#
