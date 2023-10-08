@@ -10,7 +10,7 @@ name: 'hello-world'
 # but it can also contain more than one step
 jobs:
 #
-  first job:
+  first-job:
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'first step'
@@ -18,7 +18,7 @@ jobs:
       - name: 'second step'
         run: 'echo "Hallo Welt!"'
 #      
-  second job:
+  second-job:
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'first step'
