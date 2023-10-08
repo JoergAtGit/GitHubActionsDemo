@@ -1,7 +1,7 @@
-# this is the name of the workflow
+# this is the name of the 'workflow'
 name: 'hello-world'
 #
-# this is the trigger for this workflow
+# this is the 'event' for this workflow
 # means when will it be executed
 'on': 'push'
 # 
