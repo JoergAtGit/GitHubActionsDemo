@@ -29,8 +29,8 @@ jobs:
         run: 'echo "Hallo Erde!"'
 #
   third-job:
-    #dependency to the second-job
-    needs: second-job
+    #dependency to the first-job and second-job
+    needs: [first-job, second-job]
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'first step'
