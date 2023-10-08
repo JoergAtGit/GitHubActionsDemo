@@ -3,8 +3,14 @@ name: 'WorkflowWithDependencies'
 #
 # this is the 'event' for this workflow
 # means when will it be executed
-'on': 'push'
-# 
+on:
+#  push:
+#    branches:
+#    - master
+  pull_request:
+    branches:
+    - master
+#
 # section, which contains the job-definitions
 # each job contains one step at least
 # but it can also contain more than one step
